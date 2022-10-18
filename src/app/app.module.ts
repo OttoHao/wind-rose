@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Chart } from 'chart.js';
 
 import { AppComponent } from './app.component';
+import { WindRoseModule } from './wind-rose/wind-rose.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    WindRoseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,20 @@
+<div class="chart-container">
+  <div class="legend">
+    <div class="legend-row" *ngFor="let dataset of polarAreaChartData.datasets">
+      <span
+        class="dot"
+        [style.background-color]="dataset.backgroundColor"
+      ></span>
+      <span class="label"> {{ dataset.label }}</span>
+    </div>
+  </div>
+  <div class="canvas-container">
+  <canvas
+    baseChart
+    [data]="polarAreaChartData"
+    [options]="polarAreaChartOptions"
+    [type]="polarAreaChartType"
+  >
+  </canvas>
+</div>
+</div>

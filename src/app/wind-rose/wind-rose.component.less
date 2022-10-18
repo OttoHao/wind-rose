@@ -1,0 +1,35 @@
+.chart-container {
+  display: flex;
+  justify-content: center;
+
+  .legend {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 90px;
+
+    .legend-row {
+      display: flex;
+      align-items: center;
+
+      .dot {
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 4px;
+      }
+
+      .label {
+        font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-size: 12px;
+        color: gray;
+      }
+    }
+  }
+
+  .canvas-container {
+    position: relative;
+    flex-grow: 1;
+  }
+}
